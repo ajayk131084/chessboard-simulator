@@ -2,12 +2,11 @@ package com.ak.chessboard;
 
 public final class BoardUtil {
 
-    private BoardUtil() {
-    }
+  public static final int BOARD_SIZE = 8;
 
-    public static boolean isInRange(int n, int x, int y) {
-        return (x <= n && x > 0 && y <= n && y > 0);
+  private BoardUtil() {}
 
-    }
-
+  public static boolean isInRange(int boardSize, int x, int y) {
+    return (x <= boardSize && x > 0 && y <= boardSize && y > 0);
+  }
 }
